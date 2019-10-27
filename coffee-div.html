@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>304咖啡</title>
+    <link rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    h4,
+    p {
+        font-size: 14px;
+    }
+
+    p::first-letter {
+        font-size: 32px;
+    }
+
+    #sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #sidebar ul>li {
+        border-bottom: 1px solid #595959;
+    }
+
+    #sidebar ul>li:last-child {
+        border-bottom: none;
+    }
+
+    a {
+        display: block;
+        padding: 8px 16px;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #595959;
+        color: white;
+    }
+
+    a:active {
+        background-color: #40a9ff;
+    }
+
+    .active {
+        background-color: #40a9ff;
+    }
+
+    p {
+        text-indent: 2em;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    #price-table tr td:last-child::before {
+        content: '￥';
+    }
+
+    #header {
+        text-align: center;
+        background-color: #002766;
+        color: #bae7ff;
+    }
+
+    #sidebar {
+        float: left;
+        width: 25%;
+        vertical-align: top;
+        color: #002766;
+        background-color: #f5f5f5;
+        font-size: 12px;
+        position: sticky;
+        top: 0;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
+
+    #content {
+        margin-left: 25%;
+        width: 75%;
+        padding: 8px;
+        font-size: 12px;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    #footer {
+        text-align: center;
+        background-color: #002766;
+        line-height: 64px;
+        color: #bae7ff;
+    }
+
+
+    #logo {
+        width: 32px;
+        height: 32px;
+        line-height: 64px;
+        vertical-align: middle;
+    }
+
+    #header-title {
+        vertical-align: middle;
+        line-height: 64px;
+        height: 32px;
+        font-size: 32px;
+    }
+
+    #banner {
+        width: 80%;
+    }
+
+    #banner:hover {
+        opacity: 0.5;
+    }
+
+    #price-table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+</style>
+
+<body>
+
+    <div id="header" class="center">
+        <h2><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1572145180&di=4eea5c725110e77031562cd99927c7a3&src=http://pic.51yuansu.com/pic3/cover/02/86/51/5a66fe94b3489_610.jpg"
+                id="logo" ><span id="header-title" style="font-size:16px;">来杯咖啡吗</span></h2>
+    </div>
+    <div style="position:relative;background-color: #f5f5f5;">
+        <div id="sidebar">
+            <div style="position:sticky;top:0;">
+                <div class="center">菜单</div>
+                <ul style="">
+                    <a href="#c1">
+                        <li>拿铁</li><hr>
+                    </a>
+                    <a href="#c2">
+                        <li>卡布奇诺</li><hr>
+                    </a>
+                    <a href="#c3">
+                        <li>澳瑞白</li><hr>
+                    </a>
+                    <a href="#c4">
+                        <li>美式咖啡</li><hr>
+                    </a>
+                    <a href="#c5">
+                        <li>焦糖玛奇朵</li><hr>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <h2 class="center"><img
+                    src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571740504341&di=3de31086756116f089e659bb2e35e8cd&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0148ae56ebc61332f875a944cfe42f.jpg"
+                    alt="" id="banner">
+            </h2>
+            <table border="1" id="price-table">
+                <tr>
+                    <th>咖啡</th>
+                    <th>价格</th>
+                </tr>
+                <tr>
+                    <td>拿铁</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>卡布奇诺</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>澳瑞白</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>美式咖啡</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>焦糖玛奇朵</td>
+                    <td>49</td>
+                </tr>
+            </table>
+            <h2 id="c1">拿铁</h2>
+            <img style="display:block;"
+                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571757565014&di=9b4c60b4fc85b683ae20dc1603f3a107&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201605%2F10%2F20160510122510_m5d2k.thumb.700_0.jpeg"
+                alt="网络中断"">
+            <p>
+                拿铁咖啡是意大利浓缩咖啡(Espresso)与牛奶的经典混合，意大利人也很喜欢把拿铁作为早餐的饮料。意大利人早晨的厨房里，照得到阳光的炉子上通常会同时煮着咖啡和牛奶。
+            </p>
+            <h2 id=" c2">卡布奇诺</h2>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572352306&di=58ad7698a845b5ce0de5048747c1d48a&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.coffee778.com%2Fuploads%2Fallimg%2Fc170718%2F1500345022I040-52A60.jpg"
+                alt="网络中断">
+            <p>
+                卡布奇诺是一种加入以同量的意大利特浓咖啡和蒸汽泡沫牛奶相混合的意大利咖啡。此时咖啡的颜色，就像卡布奇诺教会的修士在深褐色的外衣上覆上一条头巾一样，咖啡因此得名。传统的卡布奇诺咖啡是三分之一浓缩咖啡，三分之一蒸汽牛奶和三分之一泡沫牛奶，并在上面撒上小颗粒的肉桂粉末。
+            </p>
+            <h2 id="c3">澳瑞白</h2>
+            <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4200477595,177596283&fm=26&gp=0.jpg"
+                alt="网络中断">
+            <p>
+                喝惯了拿铁、卡布奇诺，来一杯澳瑞白吧。澳大利亚经典，咖啡与牛奶的黄金配比，成品奶香四溢，咖味更浓。
+            </p>
+            <h2 id="c4">美式咖啡</h2>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571757626362&di=e15ffbe17c0b27aa5fbefc6c0d1854c8&imgtype=0&src=http%3A%2F%2Fp0.meituan.net%2Fdealwatera%2F62372023dbe65596fe234a1dbc67f1fa170783.jpg%40468h_702w_2e_90q%257cwatermark%3D1%26%26p%3D4"
+                alt="网络中断">
+            <p>美式咖啡（英文：Caramel
+                “美式咖啡”（英文：Americano，意大利语：Caffè Americano）咖啡的一种，是最普通的咖啡。是使用滴滤式咖啡壶所制作出的黑咖啡，又或者是意式浓缩中加入大量的水制成。
+            </p>
+            <h2 id="c5">焦糖玛奇朵</h2>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571757650904&di=be6c957efdd09da2609d585125f63aee&imgtype=0&src=http%3A%2F%2Fspider.nosdn.127.net%2F87e28ab16d23864dc8449e83590c5a70.jpeg"
+                alt="网络中断">
+            <p>焦糖玛奇朵（英文：Caramel
+                Macchiato）是在香浓热牛奶上加入浓缩咖啡、香草，再淋上纯正焦糖而制成的饮品，融合三种不同口味。Macchiato意大利文，意思是“烙印”和“印染”，中文音译“玛奇朵”。“Caramel”意思是焦糖。焦糖玛琪朵，寓意“甜蜜的印记”。
+            </p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div colspan="2" id="footer" class="center">&copy; 二区二
+
+    </div>
+
+
+</body>
+
+</html>
