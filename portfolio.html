@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+    .center {
+        text-align: center;
+    }
+    #header {
+        height: 50px;
+        line-height: 50px;
+        background-color: blue;
+        font-size: 16px;
+
+    }
+
+    #header .h-left {
+        float: left;
+        padding-left: 20px;
+    }
+
+    #header .h-left img {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        margin-top: -7px;
+    }
+
+    #header .h-left a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    #header .h-right {
+        float: right;
+        padding-right: 20px;
+
+    }
+
+    #header .h-right ul li a {
+        color: aliceblue;
+    }
+
+    #container {
+        text-align: center;
+
+
+    }
+
+    #container h2 {
+        font-size: 25px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    hr {
+        margin: 0 auto;
+        width: 50px;
+        border: 2px solid #333;
+    }
+
+    #container .container-main {
+        display: flex;
+        padding: 0 50px;
+    }
+
+    #container .container-eontent {
+        /* margin: 0 auto; */
+        background-color: rgba(252, 107, 196, 0.1);
+        border: 1px solid pink;
+        margin-right: 20px;
+    }
+
+    #container .container-eontent:last-child {
+        margin-right: 0;
+    }
+
+    #container .container-eontent img {
+        height: 350px;
+        width: 241px;
+        padding-top: 10px;
+    }
+
+    #footer {
+
+        margin-top: 10px;
+        height: 100px;
+        background-color: blue;
+        line-height: 100px;
+        font-size: 16px;
+    }
+
+    #footer .left {
+        margin-left: 50px;
+        float: left;
+        width: 60%;
+    }
+
+    #footer .right {
+        float: left;
+    }
+
+    #footer .right img {
+        width: 80px;
+        height: 80px;
+    }
+    #foot {
+        text-align: center;
+        background-color: #002766;
+        line-height: 64px;
+        color: #bae7ff;
+    }
+
+</style>
+
+<body>
+    <div id="header">
+        <div class="h-left">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572158600690&di=33f3dd90baa70de03e834c897ceb057e&imgtype=0&src=http%3A%2F%2Fwww.cnepaper.com%2Fzywb%2Fresfile%2F2018-03-30%2F12%2Fp1_s.jpg"
+                alt="">
+            <a href="">个人的喜爱</a>
+        </div>
+        <div class="h-right">
+            <ul>
+                <li>
+                    <a href="">喜欢的电影</a>
+                    <a href="">喜欢的书</a>
+                    <a href="">撩一撩</a>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="container">
+        <h2>喜欢的电影</h2>
+        <hr>
+        <div class="container-main">
+            <div class="container-eontent">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572158732830&di=63d7ddfa6f5db89858f680dc6f6ab9b5&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201612%2F10%2F20161210135844_iyk2U.thumb.700_0.jpeg"
+                    alt="">
+                <p>我的名字</p>
+            </div>
+            <div class="container-eontent">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572158856755&di=be2a7734a9ae8b063b4b2c6b39687ed1&imgtype=0&src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F10578198691%2F1000.jpg"
+                    alt="">
+                <p>哪吒之魔童降世</p>
+            </div>
+            <div class="container-eontent">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572158968718&di=e60b61e9cc52cda3a012bccfccec104e&imgtype=0&src=http%3A%2F%2Fcdn103.img.lizhi.fm%2Faudio_cover%2F2016%2F09%2F02%2F2554553686267230727_320x320.jpg"
+                    alt="">
+                <p>哈利波特与魔法石</p>
+            </div>
+            <div class="container-eontent">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572159054335&di=a76cce55b9fca787219a3358d4211584&imgtype=0&src=http%3A%2F%2Fimg3.cache.netease.com%2Fgame%2F2011%2F8%2F3%2F20110803125144b875f.jpg"
+                    alt="">
+                <p>哈利波特与密室</p>
+            </div>
+        </div>
+        <div id="container">
+            <h2>喜欢的书</h2>
+            <hr>
+            <div class="container-main">
+                <div class="container-eontent">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572754482&di=b0a67228430a3541b54c30593aa547c6&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201604%2F08%2F20160408230454_Q2sRf.jpeg" alt="">
+                    <p>哈利波特与阿兹卡班的囚徒</p>
+                </div>
+                <div class="container-eontent">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572159780947&di=9d62bdbcaf5494fa8814d198d061e76e&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3Da413201fafc379317d3d8e2ddef49b73%2F838ba61ea8d3fd1f9dd74023304e251f94ca5fc9.jpg" alt="">
+                    <p>哈利波特与火焰杯</p>
+                </div>
+                <div class="container-eontent">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572159797304&di=4bbd94bfd7f014b05be90a846c6fa181&imgtype=0&src=http%3A%2F%2Fpic.baike.soso.com%2Fp%2F20131221%2F20131221010814-1887146892.jpg" alt="">
+                    <p>哈利波特与凤凰社</p>
+                </div>
+                <div class="container-eontent">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572159818348&di=b3ed8e46f8cca7c2d3470c9e5446f2cd&imgtype=0&src=http%3A%2F%2Fi1.sinaimg.cn%2Fent%2Fd%2Fw%2F2009-07-05%2FU105P28T52D4698F7566DT20090705104223.jpg" alt="">
+                    <p>哈利波特与混血王子</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="left">
+                <span>我不知道将去何方，但我已在路上。</span>
+            </div>
+            <div class="right">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+        </div>
+        <div colspan="2" id="foot" class="center">&copy; 二区二</div>
+
+</body>
+
+
+</html>
