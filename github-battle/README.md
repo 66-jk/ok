@@ -2,4 +2,4 @@
 
 ## 示例
 
-[github battle](https://66-jk.github.io/github-battle/)
+[github battle](https://66-jk.github.io/train/github-battle/)
