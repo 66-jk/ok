@@ -1,0 +1,48 @@
+/* 内容 */
+.title{
+    text-align: center;
+    font-size: 30px;
+    border-bottom:1px #eee solid;
+    line-height:60px;
+    background-color: #fafafa;
+}
+.breadth{
+    width: 80%;
+    margin: 0 auto;
+}
+.serve{
+    overflow: hidden;
+}
+
+.serve>ul>li{
+    float: left;
+    margin: 10px 0  10px 8%;
+    list-style-type:none;
+    text-align: center;
+    font-size: 20px;
+}
+.synopsis{
+    text-align: center;
+}
+.synopsis>p{
+    text-align:left;
+    text-indent:40px;
+    font-size: 20px;
+}
+
+/* 动态 */
+.dynamic{
+    overflow: hidden;
+}
+.dynamic>div{
+    float: left;
+    width: 250px;
+    margin:10px 0 0 8%;
+    word-wrap:break-word;
+}
+
+.dynamic>div>p{
+    font-size: 20px;
+    text-indent:40px;
+    margin-top: 10px 0 10px 0;
+}
